@@ -1,5 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import QuizImg from '../../Images/QuizApp.png'
+import VideoImg from '../../Images/videoApp.png'
+import ShopImg from '../../Images/shopNow.png'
+import todoImg from '../../Images/todolist.png'
+import multiPartImg from '../../Images/multiStep.png'
+import memeImg from '../../Images/meme.png'
 
 const Projects = ({toggleState}) => {
   return (
@@ -12,7 +18,7 @@ const Projects = ({toggleState}) => {
         <ProjectRow>
             <Project>
                 <ImgBox>
-                    <img src="" alt="" />
+                    <img src={QuizImg} alt="" />
                 </ImgBox>
                     
                     <ProjectTitle>
@@ -26,7 +32,7 @@ const Projects = ({toggleState}) => {
             </Project>
             <Project>
                 <ImgBox>
-                    <img src="" alt="" />
+                    <img src={multiPartImg} alt="" />
                 </ImgBox>
                     
                     <ProjectTitle>
@@ -40,7 +46,7 @@ const Projects = ({toggleState}) => {
             </Project>
             <Project>
                 <ImgBox>
-                    <img src="" alt="" />
+                    <img src={todoImg} alt="" />
                 </ImgBox>
                     
                     <ProjectTitle>
@@ -54,7 +60,7 @@ const Projects = ({toggleState}) => {
             </Project>
             <Project>
                 <ImgBox>
-                    <img src="" alt="" />
+                    <img src={memeImg} alt="" />
                 </ImgBox>
                     
                     <ProjectTitle>
@@ -68,7 +74,7 @@ const Projects = ({toggleState}) => {
             </Project>
             <Project>
                 <ImgBox>
-                    <img src="" alt="" />
+                    <img src={VideoImg} alt="" />
                 </ImgBox>
                     
                     <ProjectTitle>
@@ -82,7 +88,7 @@ const Projects = ({toggleState}) => {
             </Project>
             <Project>
                 <ImgBox>
-                    <img src="" alt="" />
+                    <img src={ShopImg} alt="" />
                 </ImgBox>
                     
                     <ProjectTitle>
@@ -163,7 +169,13 @@ const ImgBox = styled.div`
     transition-duration: .5s;
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.09);
+    }
+
+    img {
+        width: 100%;
+        height: 40vh;
+        border-radius: 5px;
     }
 `
 
