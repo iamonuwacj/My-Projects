@@ -28,7 +28,7 @@ const Contact = ({toggleState}) => {
                 <div className='mailLinks'>
                     <a 
                         style={{color: toggleState ? "black" : "white"}}
-                        href="https://linkedin.com">Linkedin</a>
+                        href="https://www.linkedin.com/in/iamonuwacj/">Linkedin</a>
                 </div>
             </ShootMail>
         </form>
@@ -46,6 +46,12 @@ const ContactContainer = styled.div`
 
     form {
         width: 42%;
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+            font-size: 8px;
+            margin: auto;
+        }
     }
 `
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import hero from '../../profile-pic.png'
+import hero from '../../Images/avater_light.jpeg'
+import hero_light from '../../Images/avatar_dark.jpeg'
+
 
 const About = ({toggleState}) => {
   return (
@@ -13,7 +15,7 @@ const About = ({toggleState}) => {
         <AboutMe>
             <div className='about-row'>
                 <div className='about-img'>
-                    <img src={hero} alt="" />
+                    <img src={toggleState ? hero : hero_light} alt="" />
                 </div>
                 <div className='contentBox'>
                     <div className='honors'>
@@ -43,10 +45,13 @@ const About = ({toggleState}) => {
 
 const AboutContainer = styled.div`
     height: 100vh;
-    /* background-color: green; */
     margin-top: 9%;
     text-align: center;
     height: 100vh;
+
+    @media screen and (max-width: 1200px) {
+        height: 145vh;
+    }
 
     header {
         padding: 5px 0;
@@ -66,14 +71,22 @@ const AboutMe = styled.div`
     display: flex;
     margin-top: 80px;
 
+
     .about-row {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         .about-img {
             width: 35%;
             background-color: gray;
+
+            @media screen and (max-width: 1200px){
+                width: 100%;
+                margin: auto;
+                margin-bottom: 30px;
+            }
 
             img {
                 width: 100%;
@@ -82,6 +95,11 @@ const AboutMe = styled.div`
 
         .contentBox {
             width: 60%;
+
+            @media screen and (max-width: 1200px){
+                width: 100%;
+                margin: auto;
+            }
 
             .honors {
                 display: flex;
@@ -105,6 +123,11 @@ const AboutMe = styled.div`
                     margin-bottom: 20px;
                     border-radius: 20px;
                     line-height: 1.5;
+
+                    @media screen and (max-width: 1200px){
+                        padding: unset;
+                        padding: 20px 0;
+                    }
                 }
                 .aboutBox {
                     text-align: left;

@@ -10,7 +10,7 @@ import Skills from './components/Skills/Skills';
 
 function App() {
 
-    const [toggle, setToggle] = useState(false)
+    const [toggle, setToggle] = useState(true)
 
     return (
         <div className="App" style={{ backgroundColor: toggle ? "#222222" : "white"}}>

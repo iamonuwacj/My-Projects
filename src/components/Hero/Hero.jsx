@@ -1,7 +1,8 @@
 import React from 'react'
 import {styled} from 'styled-components'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import logo from '../../profile-pic.png'
+import profile from '../../Images/profile.jpeg'
+import profile_pic from '../../Images/native.jpeg'
 
 const Hero = ({toggleState}) => {
   return (
@@ -16,13 +17,13 @@ const Hero = ({toggleState}) => {
             <Download 
               style={{backgroundColor: toggleState ? "#fff" : "#222", 
                 color: toggleState ? "black" : "white"}}>
-              <a href="" style={{color: toggleState ? "black" : "white"}}>Download CV</a>
+              <a href="../../Images/cv_updated.pdf" style={{color: toggleState ? "black" : "white"}} download={true}>Download CV</a>
             </Download>
 
             <Contact
               style={{backgroundColor: toggleState ? "black" : "#0987f2", color: toggleState ? "black" : "white"}}
             >
-              <a href="" style={{color: toggleState ? "white" : "black"}}>Contact Info</a>
+              <a href="#contact" style={{color: toggleState ? "white" : "black"}}>Contact Info</a>
             </Contact>
           </div>
 
@@ -30,13 +31,13 @@ const Hero = ({toggleState}) => {
             <a href='https://github.com' style={{color: toggleState ? "white" : "black"}}>
               <FaGithub size={35} className='icons'/></a>
 
-            <a href='https://github.com' style={{color: toggleState ? "white" : "black"}}>
+            <a href='https://www.linkedin.com/in/iamonuwacj/' style={{color: toggleState ? "white" : "black"}}>
               <FaLinkedin size={35} className='icons'/></a>
           </Icons>
         </HeroContent>
           
         <HeroImg>
-          <img src={logo} alt="" />
+          <img src={ toggleState ? profile : profile_pic } alt="" />
         </HeroImg>
     </Container>
   )
@@ -51,6 +52,13 @@ const Container = styled.div`
   align-items: center;
   height: 69vh;
   position: relative;
+  /* flex-wrap: wrap-reverse; */
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap-reverse;
+    margin-top: 20%;
+    height: 100vh;
+  }
 `
 
 const HeroContent = styled.div`
@@ -63,6 +71,10 @@ const HeroContent = styled.div`
   flex-wrap: wrap;
   padding: 12% 0;
 
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+
   .cv {
     display: flex;
     width: 100%;
@@ -71,8 +83,6 @@ const HeroContent = styled.div`
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 20px;
-
-    
 
     a {
       font: bold;
@@ -107,9 +117,19 @@ const HeroImg = styled.div`
   justify-content: center;
   align-items: center;
   background-color: lavender;
+  border-radius: 50%;
+  padding: 10px;
+
+  background-color: green;
+
+  @media screen and (max-width: 1200px) {
+    width: 70%;
+    margin: auto;
+  }
 
   img {
     width: 100%;
+    border-radius: 50%;
   }
 `
 

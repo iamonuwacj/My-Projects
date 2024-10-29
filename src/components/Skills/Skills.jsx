@@ -1,5 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
+import { TiTick } from 'react-icons/ti'
 
 const Skills = ({toggleState}) => {
   return (
@@ -14,7 +15,7 @@ const Skills = ({toggleState}) => {
                 <h3 className='title'>Frontend Development</h3>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>HTML</h3>
@@ -23,7 +24,7 @@ const Skills = ({toggleState}) => {
                 </Skill>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>CSS</h3>
@@ -32,7 +33,7 @@ const Skills = ({toggleState}) => {
                 </Skill>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>Bootsrap</h3>
@@ -41,7 +42,7 @@ const Skills = ({toggleState}) => {
                 </Skill>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>JavaScript</h3>
@@ -50,7 +51,7 @@ const Skills = ({toggleState}) => {
                 </Skill>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>React</h3>
@@ -59,7 +60,7 @@ const Skills = ({toggleState}) => {
                 </Skill>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>Tailwind Css</h3>
@@ -72,7 +73,7 @@ const Skills = ({toggleState}) => {
                 <h3 className='title'>Frontend Development</h3>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>Git</h3>
@@ -81,7 +82,7 @@ const Skills = ({toggleState}) => {
                 </Skill>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>Redux</h3>
@@ -90,7 +91,7 @@ const Skills = ({toggleState}) => {
                 </Skill>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>jQuery</h3>
@@ -99,7 +100,7 @@ const Skills = ({toggleState}) => {
                 </Skill>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>Styled Components</h3>
@@ -108,7 +109,7 @@ const Skills = ({toggleState}) => {
                 </Skill>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>Jest</h3>
@@ -117,7 +118,7 @@ const Skills = ({toggleState}) => {
                 </Skill>
                 <Skill>
                     <div className="tic-mark">
-
+                        <TiTick  size={70} color='green'/>
                     </div>
                     <div className="skill">
                         <h3>SASS</h3>
@@ -150,7 +151,11 @@ const SKillContainer = styled.div`
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1200px) {
+        height: 100vh;
+    }
 
     .details {
         width: 48%;
@@ -160,6 +165,10 @@ const SKillContainer = styled.div`
         display: flex;
         flex-wrap: wrap;
         height: 45vh;
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
 
         .title {
             width: 100%;
@@ -180,8 +189,11 @@ const Skill = styled.div`
 
     .tic-mark{
         width: 30%;
-        background-color: black;
+        /* background-color: black; */
         height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .skill{

@@ -16,12 +16,12 @@ const Projects = ({toggleState}) => {
                 </ImgBox>
                     
                     <ProjectTitle>
-                        Project Title
+                        Quiz App
                     </ProjectTitle>
 
                 <Links>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Github</a>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
+                    <a href="https://github.com/iamonuwacj/QuizApp" style={{color: toggleState ? "white" : "black"}}>Github</a>
+                    <a href="https://quiz-app-ten-flax.vercel.app" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
                 </Links>
             </Project>
             <Project>
@@ -30,12 +30,12 @@ const Projects = ({toggleState}) => {
                 </ImgBox>
                     
                     <ProjectTitle>
-                        Project Title
+                        Multi Step Form
                     </ProjectTitle>
 
                 <Links>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Github</a>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
+                    <a href="https://github.com/iamonuwacj/multi-step-form" style={{color: toggleState ? "white" : "black"}}>Github</a>
+                    <a href="https://multi-step-form-pi-one.vercel.app" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
                 </Links>
             </Project>
             <Project>
@@ -44,12 +44,12 @@ const Projects = ({toggleState}) => {
                 </ImgBox>
                     
                     <ProjectTitle>
-                        Project Title
+                        Todo List
                     </ProjectTitle>
 
                 <Links>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Github</a>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
+                    <a href="https://github.com/iamonuwacj/TodoList" style={{color: toggleState ? "white" : "black"}}>Github</a>
+                    <a href="https://todo-list-ashen-delta-13.vercel.app" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
                 </Links>
             </Project>
             <Project>
@@ -58,12 +58,12 @@ const Projects = ({toggleState}) => {
                 </ImgBox>
                     
                     <ProjectTitle>
-                        Project Title
+                        Meme Generator
                     </ProjectTitle>
 
                 <Links>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Github</a>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
+                    <a href="https://github.com/iamonuwacj/memeGenerator" style={{color: toggleState ? "white" : "black"}}>Github</a>
+                    <a href="https://meme-generator-khaki-two.vercel.app" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
                 </Links>
             </Project>
             <Project>
@@ -72,12 +72,12 @@ const Projects = ({toggleState}) => {
                 </ImgBox>
                     
                     <ProjectTitle>
-                        Project Title
+                        Video App
                     </ProjectTitle>
 
                 <Links>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Github</a>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
+                    <a href="https://github.com/iamonuwacj/video_app" style={{color: toggleState ? "white" : "black"}}>Github</a>
+                    <a href="https://video-app-chi-two.vercel.app" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
                 </Links>
             </Project>
             <Project>
@@ -86,12 +86,12 @@ const Projects = ({toggleState}) => {
                 </ImgBox>
                     
                     <ProjectTitle>
-                        Project Title
+                        Shop Now
                     </ProjectTitle>
 
                 <Links>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Github</a>
-                    <a href="" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
+                    <a href="https://github.com/iamonuwacj/shop_now" style={{color: toggleState ? "white" : "black"}}>Github</a>
+                    <a href="https://shop-now-bzs9.vercel.app" style={{color: toggleState ? "white" : "black"}}>Live Link</a>
                 </Links>
             </Project>
             
@@ -110,6 +110,12 @@ const ProjectContainer = styled.div`
     justify-content: center;
     margin-top: 6%;
     flex-wrap: wrap;
+    background-color: yellow;
+
+    @media screen and (max-width: 1200px) {
+        top: 40vh;
+        margin-bottom: 20px;
+    }
 `
 
 const ProjectTitleDiv = styled.div`
@@ -131,6 +137,10 @@ const ProjectRow = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+
+    @media screen and (max-width: 1200px) {
+
+    }
 `
 
 const Project = styled.div`
@@ -140,6 +150,11 @@ const Project = styled.div`
     height: 65vh;
     padding: 30px;
     border-radius: 20px;
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 `
 
 const ImgBox = styled.div`
