@@ -56,8 +56,9 @@ const Container = styled.div`
 
   @media screen and (max-width: 1200px) {
     flex-wrap: wrap-reverse;
-    margin-top: 20%;
+    top: 10vh;
     height: 100vh;
+    margin-bottom: 20vh;
   }
 `
 
