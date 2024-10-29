@@ -110,7 +110,6 @@ const ProjectContainer = styled.div`
     justify-content: center;
     margin-top: 6%;
     flex-wrap: wrap;
-    background-color: yellow;
 
     @media screen and (max-width: 1200px) {
         top: 40vh;

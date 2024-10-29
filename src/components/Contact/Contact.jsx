@@ -73,6 +73,12 @@ const ShootMail = styled.div`
     border-radius: 20px;
     padding-left: 20px;
     border: 2px solid gray;
+
+    @media screen and (max-width: 1200px) {
+            width: 100%;
+            font-size: 8px;
+            margin: auto;
+        }
    
 
     .iconBox {
@@ -84,6 +90,12 @@ const ShootMail = styled.div`
         align-items: center;
         justify-content: center;
         padding: 10px;
+
+        @media screen and (max-width: 1200px) {
+            width: 15%;
+            padding: 5px;
+            margin-right: 4px;
+        }
     }
 
     .mailLinks {
@@ -96,6 +108,10 @@ const ShootMail = styled.div`
         a {
             font-size: 20px;
             color: black;
+
+            @media screen and (max-width: 1200px) {
+            font-size: 12px;
+        }
         }
     }
 `
